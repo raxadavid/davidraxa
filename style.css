@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    padding-left: 150px;
+    
+}
+
+div {
+    position: fixed;
+    left: 80px;
+    background-color: azure;
+}
+
+.Nav {
+    position: fixed;
+    left: 10px;
+    top: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    background-color: aquamarine;
+}
+
+h {
+font-family: 'Lato', sans-serif;
+font-size: 32px;
+text-align: center;
+}
