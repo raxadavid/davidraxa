@@ -2,13 +2,18 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     padding-left: 150px;
+    background-color: whitesmoke;
     
 }
 
-div {
-    position: fixed;
-    left: 80px;
-    background-color: azure;
+.innerBody {
+    max-width: 750px;
+    background-color: aquamarine;
+    text-align: left;
+}
+
+.innerText {
+    margin-left: 25px;
 }
 
 .Nav {
@@ -18,10 +23,43 @@ div {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
     background-color: aquamarine;
+    padding: 10px;
+}
+
+.Nav:hover {
+}
+
+
+a:hover{
+    color:blue;
+    
+}
+.box {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.box:hover {
+    background-color: blue;
 }
 
 h {
 font-family: 'Lato', sans-serif;
 font-size: 32px;
 text-align: center;
+}
+
+.headerSpacing {
+    padding-bottom: 60px;
+}
+
+.marginPlacement {
+    padding=left: 200px;
+}
+
+.imagePlacement {
+    height: 300px;
+    width: 220px;
+    margin-left: 30px;
 }
