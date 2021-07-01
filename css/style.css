@@ -24,7 +24,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #EF233C;
+    color: #EE64D;
     outline: none;
     text-decoration: none;
 }
@@ -44,20 +44,20 @@ a:focus {
     font-weight: 600;
     letter-spacing: 1px;
     color: #ffffff;
-    background: #EF233C;
+    background: #EE64D;
     border: 2px solid transparent;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #EF233C;
+    box-shadow: inset 0 0 0 50px #EE64D;
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
 }
 
 .btn:hover {
-    color: #EF233C;
+    color: #EE64D;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 #EE64D;
+    border-color: #EE64D;
 }
 
 #loader {
@@ -91,7 +91,7 @@ a:focus {
     width: 45px;
     height: 45px;
     border: 5px solid #dddddd;
-    border-top: 5px solid #EF233C;
+    border-top: 5px solid #EE64D;
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
@@ -180,7 +180,7 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: #ffffff !important;
+        background: #98c1d9 !important;
     }
     
     .navbar .navbar-brand {
@@ -188,7 +188,7 @@ a:focus {
     }
     
     .navbar.nav-sticky .navbar-brand {
-        color: #EF233C;
+        color: #EE64D;
     }
 
     .navbar-light .navbar-nav .nav-link,
@@ -211,7 +211,7 @@ a:focus {
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #EF233C;
+        color: #EE64D;
     }
 }
 
@@ -222,7 +222,7 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #EF233C;
+        color: #EE64D;
     }
     
     .navbar .navbar-nav {
@@ -245,13 +245,14 @@ a:focus {
 .hero {
     position: relative;
     width: 100%;
-    margin-bottom: 45px;
-    padding: 120px 0 0 0;
+    margin-bottom: 100px;
+    padding: 300px 0 300px 0;
     overflow: hidden;
     background-color: #3d5a80;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url('../img/herobackground.png');
 }
 
 .hero .container-fluid {
@@ -267,6 +268,13 @@ a:focus {
 .hero .hero-image img {
     max-width: 80%;
     max-height: 80%;
+}
+
+.hero .hero-background-img {
+    max-width: 80%;
+    max-height: 80%;
+    position: relative;
+    padding-right: 90%;
 }
 
 .hero .hero-content {
@@ -314,7 +322,7 @@ a:focus {
 
 .hero .hero-btn .btn {
     margin-top: 35px;
-    color: #EF233C;
+    color: #EE64D;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -439,7 +447,7 @@ a:focus {
     top: 11px;
     right: 0;
     left: -30px;
-    background: #EF233C;
+    background: #EE64D;
     z-index: -1;
 }
 
@@ -450,7 +458,7 @@ a:focus {
     height: 3px;
     top: 11px;
     left: 3px;
-    background: #EF233C;
+    background: #EE64D;
     z-index: 1;
 }
 
@@ -565,7 +573,7 @@ a:focus {
     content: '';
     position: absolute;
     width: 2px;
-    background: #EF233C;
+    background: #EE64D;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -597,7 +605,7 @@ a:focus {
     top: 48px;
     right: -8px;
     background: #ffffff;
-    border: 2px solid #EF233C;
+    border: 2px solid #EE64D;
     border-radius: 16px;
     z-index: 1;
 }
@@ -629,7 +637,7 @@ a:focus {
     top: 44px;
     font-size: 16px;
     font-weight: 600;
-    color: #EF233C;
+    color: #EE64D;
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
@@ -751,10 +759,10 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     color: #ffffff;
-    background: #EF233C;
+    background: #EE64D;
     border: 2px solid transparent;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #EF233C;
+    box-shadow: inset 0 0 0 50px #EE64D;
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
@@ -762,10 +770,10 @@ a:focus {
 
 .portfolio #portfolio-filter li:hover,
 .portfolio #portfolio-filter li.filter-active {
-    color: #EF233C;
+    color: #EE64D;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 #EE64D;
+    border-color: #EE64D;
 }
 
 .portfolio .portfolio-item {
@@ -827,10 +835,10 @@ a:focus {
 }
 
 .portfolio .portfolio-item:hover a.btn {
-    color: #EF233C;
+    color: #EE64D;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 #EE64D;
+    border-color: #EE64D;
 }
 
 
@@ -886,7 +894,7 @@ a:focus {
 
 .contact .contact-form .btn {
     margin-top: 35px;
-    color: #EF233C;
+    color: #EE64D;
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
