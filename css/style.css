@@ -849,6 +849,12 @@ a:focus {
     border-color: #EE64D;
 }
 
+/*.portfolio_open .btn {
+    color: darkred;
+    padding-left: 50px;
+} */
+
+
 
 /*******************************/
 /********* Contact CSS *********/
