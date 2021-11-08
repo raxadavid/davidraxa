@@ -21,6 +21,10 @@ a {
     transition: .3s;
 }
 
+.hoverProject {
+    color: darkred;
+}
+
 a:hover,
 a:active,
 a:focus {
@@ -822,12 +826,21 @@ a:focus {
 
 .portfolio .portfolio-text h3 {
     width: calc(100% - 70px);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     margin: 0 0 0 15px;
     white-space: nowrap;
     overflow: hidden;
     color: #293241;
+}
+
+.portfolio .portfolio-text:hover h3 {
+    width: calc(100% - 70px);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 0 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .portfolio .portfolio-text a.btn {
