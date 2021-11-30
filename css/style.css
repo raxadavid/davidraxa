@@ -501,6 +501,7 @@ a:focus {
 
 .about .section-header {
     margin-bottom: 30px;
+    margin-top:  30px;
 }
 
 .about .about-img {
@@ -510,7 +511,7 @@ a:focus {
 
 .about .about-img img {
     position: relative;
-    width: 100%;
+     width: 60%;
     height: 100%;
     object-fit: cover;
 }
@@ -876,12 +877,13 @@ a:focus {
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: #3d5a80;
+    background: #98c1d9;
 }
 
 .contact .container-fluid {
-    background: url(../img/contact.jpeg) left center no-repeat;
+    /** background: url(../img/contact.jpeg) left center no-repeat; **/
     background-size: contain;
+    background-color: #293241;
 }
 
 .contact .contact-form {
