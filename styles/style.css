@@ -41,8 +41,44 @@ p {
 	line-height: 0;
 }
 
+
+.heroBanner {
+    display:  flex;
+    text-align: center;
+    margin: inherit;
+    max-width: 130px;
+    margin-bottom: 40px;
+    margin-top: -20px;
+    position: relative;
+}
+
+.hero-text {
+    line-height: 0;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    align-content: center;
+
+}
+
+.hero-text .typed-text {
+    display: none;
+
+}
+
+.hero-text .typed-cursor {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+
+
+
+
 /*LINE*/
 hr {
+    position: static;
 	border: none;
 	margin:  auto;
 	border: solid;

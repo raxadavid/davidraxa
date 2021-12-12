@@ -41,3 +41,16 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+(function ($) {
+  if ($('.hero-text h3').length == 1) {
+        var typed_strings = $('.hero-text .typed-text').text();
+        var typed = new Typed('.hero-text h3', {
+            strings: typed_strings.split(', '),
+            typeSpeed: 100,
+            backSpeed: 20,
+            smartBackspace: false,
+            loop: true
+        });
+    }
+    })(jQuery);
