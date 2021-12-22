@@ -1,8 +1,8 @@
 body {
 	color: black;
-	background-color: lightblue;
+	background-color: white;
 	font-family: 'Fira-Sans';
-    background-image: url("../img/background.jpg");
+    /*background-image: url("../img/background.jpg");*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -38,9 +38,47 @@ h4 {
 p {
 	font-size: 12px;
 	color: black;
-	line-height: 0;
+	line-height: 2;
 }
 
+
+/********** NAV BAR ************/
+/********** NAV BAR ************/
+/********** NAV BAR ************/
+/********** NAV BAR ************/
+/********** NAV BAR ************/
+.navBar {
+  list-style-type: none;
+  overflow: hidden;
+  margin:  0;
+  margin-right: 3rem;
+  padding: 0;
+}
+
+.listItem {
+    float: right;
+}
+
+.listItem a {
+    display: block;
+    color: black;
+    text-align:  center;
+    padding: 14px 16px;
+    text-decoration:  none;
+}
+
+.listItem a:hover {
+    background-color: lightblue;
+}
+
+
+
+
+/********** HOME PAGE ************/
+/********** HOME PAGE ************/
+/********** HOME PAGE ************/
+/********** HOME PAGE ************/
+/********** HOME PAGE ************/
 
 .heroBanner {
     display:  flex;
@@ -424,5 +462,106 @@ hr {
         padding: 0 5px;
     }
 }
+
+/****** WEBSITE DESIGN METHODOLOGY PAGES ********/
+/****** WEBSITE DESIGN METHODOLOGY PAGES ********/
+/****** WEBSITE DESIGN METHODOLOGY PAGES ********/
+/****** WEBSITE DESIGN METHODOLOGY PAGES ********/
+/****** WEBSITE DESIGN METHODOLOGY PAGES ********/
+/****** WEBSITE DESIGN METHODOLOGY PAGES ********/
+/****** WEBSITE DESIGN METHODOLOGY PAGES ********/
+
+
+.desBanner {
+    background-size: cover;
+    max-height:  30rem;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.parallax {
+  /* The image used 
+  background-image: url("../img/insomniacApp.jpg"); */
+
+  /* Set a specific height */
+  min-height: 30rem; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* 2 Column Layout */
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.desColumn {
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+
+.desRow {
+    display: flex;
+}
+
+.desRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.desImage {
+    max-width: 100%;
+}
+
+
+/** PROGRESS BAR **/
+/** PROGRESS BAR **/
+/** PROGRESS BAR **/
+/** PROGRESS BAR **/
+
+progress {
+  border: none;
+  width: 400px;
+  height: 30px;
+  background: crimson;
+}
+
+progress {
+  color: lightblue;
+}
+
+progress::-moz-progress-bar {
+  background: lightcolor;
+}
+
+progress::-webkit-progress-value {
+  background: lawngreen;
+}
+
+progress::-webkit-progress-bar {
+  background: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
