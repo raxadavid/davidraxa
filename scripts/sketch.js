@@ -20,7 +20,7 @@ function setup() {
     trailBackground[i] = new Trail(mouseX,mouseY,10,color((random(1,255)),random(1,100)*2,255),random(0.05,1.5));
   }
   
-  for (i=0; i<100; i++) {
+  for (i=0; i<50; i++) {
     squareBackground[i] = new Square(random(0,windowWidth) , random(0,windowHeight), random(10,40), random(1,50) ,random(0.1,0.5));
   }
 }
@@ -30,7 +30,7 @@ function draw() {
     noCursor();
     noStroke();
   
-    for (i=0; i<100; i++) {
+    for (i=0; i<50; i++) {
     squareBackground[i].body();
     squareBackground[i].movement();
   }
