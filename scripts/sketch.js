@@ -2,6 +2,8 @@ let trailBackground = [];
 var canvas
 var mouse;
 let squareBackground = [];
+let str = ["Design","UX Design", "Visual Design","Interaction Design", "Student","Web Development", "Graphic Design", "Modernism", "Typography"]
+
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
@@ -11,7 +13,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
   canvas.style('z-index','-1');
-  canvas.elt.style.position = "fixed"
+  canvas.elt.style.position = "fixed";
   noCursor();
   
       for (i=0; i<30; i++){
@@ -19,7 +21,7 @@ function setup() {
   }
   
   for (i=0; i<100; i++) {
-    squareBackground[i] = new Square(random(0,windowWidth) , random(0,windowHeight), random(10,50), random(1,50) ,random(0.1,0.5));
+    squareBackground[i] = new Square(random(0,windowWidth) , random(0,windowHeight), random(10,40), random(1,50) ,random(0.1,0.5));
   }
 }
 
@@ -81,7 +83,9 @@ class Square {
     this.reverseMove = random([true,false]);
     this.reverseMoveY = random([true,false]);
     this.colorFull = false;
-    this.cSpeed = random(0.01,0.1);
+    this.cSpeed = random(0.01,1);
+    this.text = random(str);
+    this.textSize = random(6,32);
   }
   
   body() {
@@ -103,8 +107,10 @@ class Square {
     else if (this.c<-50 && this.colorFull==true){
       this.colorFull=false;
     }
-      
-    square(this.x,this.y,this.d);
+    
+    textAlign(CENTER);
+    textSize(this.textSize);
+    text(this.text,this.x,this.y);
   }
   
   movement() {
