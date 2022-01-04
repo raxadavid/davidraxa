@@ -19,7 +19,7 @@ function setup() {
   }
   
   for (i=0; i<100; i++) {
-    squareBackground[i] = new Square(random(0,windowWidth) , random(0,windowHeight), random(10,50), random(1,100) ,random(0.1,0.5));
+    squareBackground[i] = new Square(random(0,windowWidth) , random(0,windowHeight), random(10,50), random(1,50) ,random(0.1,0.5));
   }
 }
 
@@ -27,7 +27,7 @@ function draw() {
   background(255);
     noCursor();
     noStroke();
-
+  
     for (i=0; i<100; i++) {
     squareBackground[i].body();
     squareBackground[i].movement();
@@ -80,10 +80,30 @@ class Square {
     this.s = s;
     this.reverseMove = random([true,false]);
     this.reverseMoveY = random([true,false]);
+    this.colorFull = false;
+    this.cSpeed = random(0.01,0.1);
   }
   
   body() {
     fill(200,200,random(200,255),this.c);
+    
+    //Turn
+    if(this.c<100 && this.colorFull==false) {
+      this.c+=this.cSpeed;
+    }
+    //Reach full
+    else if(this.c>100 && this.colorFull==false) {
+      this.colorFull = true;
+    }
+    //go back
+    else if (this.c>-50 && this.colorFull==true) {
+      this.c-=this.cSpeed;
+    }
+    //reach 0 color
+    else if (this.c<-50 && this.colorFull==true){
+      this.colorFull=false;
+    }
+      
     square(this.x,this.y,this.d);
   }
   
