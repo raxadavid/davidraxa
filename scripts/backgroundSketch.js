@@ -1,4 +1,3 @@
-let trailBackground = [];
 var canvas
 var mouse;
 let squareBackground = [];
@@ -14,62 +13,22 @@ function setup() {
   canvas.elt.style.position = "fixed"
   noCursor();
   
-      for (i=0; i<30; i++){
-    trailBackground[i] = new Trail(mouseX,mouseY,10,color((random(1,255)),random(1,100)*2,255),random(0.05,1.5));
-  }
   
-  for (i=0; i<100; i++) {
-    squareBackground[i] = new Square(random(0,windowWidth) , random(0,windowHeight), random(10,50), random(1,100) ,random(0.1,0.5));
+  for (i=0; i<1000; i++) {
+    squareBackground[i] = new Square(random(0,windowWidth) , random(0,windowHeight), random(10,40), random(1,50) ,random(0.1,0.5));
   }
 }
 
 function draw() {
   background(255);
-    noCursor();
     noStroke();
-
-    for (i=0; i<100; i++) {
+  
+    for (i=0; i<1000; i++) {
     squareBackground[i].body();
     squareBackground[i].movement();
   }
-  
-  //trail background,  overlays all items
-  for (i=0; i<30; i++) {
-    trailBackground[i].trailBody();
-    trailBackground[i].ease();
-  }
-  
-
-  
-  //Mouse pointer
-  //fill ("white");
-  //circle(mouseX, mouseY, 20);
 }
 
-class Trail {
-  constructor(x,y,d,c,s) {
-    this.x = x;
-    this.y = y;
-    this.d = d;
-    this.c = c;
-    this.s = s;
-  }
-  
-  trailBody(){
-  fill(this.c);
-  square(this.x,this.y,this.d);
-  }
-  
-  ease() {
-  let easing = this.s;
-  let targetX = mouseX;
-  let dx = targetX - this.x;
-  let targetY = mouseY;
-  let dy = targetY - this.y;
-  this.x += (dx * easing);
-  this.y += (dy * easing);
-  }
-}
 
 class Square {
   constructor(x,y,d,c,s) {
