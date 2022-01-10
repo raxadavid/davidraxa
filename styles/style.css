@@ -1,5 +1,10 @@
+/* #39B54A */
+/* #009444 */
+/* #006838 */
+/* #58595B */
+
 body {
-	color: black;
+	color: #58595B;
 	background-color: white;
 	font-family: 'Fira-Sans';
     /*background-image: url("../img/background.jpg");*/
@@ -19,25 +24,25 @@ a {
 }
 h1 {
 	font-size: 50px;
-	color: black;
+	color: #58595B;
 	line-height: 0;
 }
 
 h2 {
 	font-size: 48px;
-	color: black;
+	color: #39B54A;
 	line-height: 1;
 }
 
 h4 {
 	font-size: 16px;
-	color: black;
+	color: #39B54A;
 	line-height: 0;
 }
 
 p {
 	font-size: 12px;
-	color: black;
+	color: #58595B;
 	line-height: 2;
 }
 
@@ -61,14 +66,15 @@ p {
 
 .listItem a {
     display: block;
-    color: black;
+    color: #58595B;
     text-align:  center;
     padding: 14px 16px;
     text-decoration:  none;
 }
 
 .listItem a:hover {
-    color: blue;
+    color: #009444;
+    transition:  .3s;
 }
 
 
@@ -108,7 +114,7 @@ p {
     margin-top: 20px;
     font-size: 20px;
     font-weight: 300;
-    color: black;
+    color: #58595B;
 }
 
 
@@ -132,7 +138,7 @@ hr {
 /*Line Animation!*/
 @keyframes lineAnimation {
 	0% {width: 0%; color: white}
-	100% {width: 70%; color: black;}
+	100% {width: 70%; color: #58595B;}
 }
 
 /* Banner */
@@ -274,6 +280,7 @@ hr {
 	width: 100%;
 	min-height: 80%;
 	z-index: 0;
+    border-radius: 10px;
 }
 
 .content-Text {
@@ -313,6 +320,11 @@ hr {
 	0% {font-size: initial;}
 }
 
+@keyframes imageColor {
+    0% {opacity: initial;}
+    100% {opacity: ;}
+}
+
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
@@ -332,15 +344,17 @@ hr {
   outline: none;
   padding: 12px 16px;
   cursor: pointer;
+  border-radius: 10px;
+  transition: .3s;
 }
 
 .btn:hover {
-    color: blue;
+    color: #39B54A;
 }
 
 .btn.active {
-    background-color: lightblue;
-  color: blue;
+    background-color: #39B54A;
+  color: white;
 }
 
 
@@ -404,7 +418,7 @@ hr {
     margin-right: 15px;
     margin-bottom: 32px;
     font-size: 32px;
-    color: black;
+    color: #58595B;
     transition: .3s;
 }
 
@@ -413,7 +427,7 @@ hr {
 }
 
 .footer .footer-social a:hover i {
-    color: blue;
+    color: #009444;
 }
 
 .footer .copyright {
@@ -573,15 +587,18 @@ progress::-webkit-progress-bar {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: blue;
-  color: white;
+  background-color: rgb(239, 239, 239);
+  color: #58595B;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+  transition: .3s;
 }
 
 #topButton:hover {
-  background-color: lightblue;
+  background-color: #009444;
+  transition: .3s;
+  color: white;
 }
 
 
