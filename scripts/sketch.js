@@ -3,7 +3,7 @@ var canvas
 var mouse;
 let squareBackground = [];
 let str = ["Design","UX Design", "Visual Design","Interaction Design", "Student","Web Development", "Graphic Design", "Modernism", "Typography"]
-
+let color = ["#39B54A", "#009444", "#006838"];
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
@@ -16,8 +16,8 @@ function setup() {
   canvas.elt.style.position = "fixed";
   noCursor();
   
-      for (i=0; i<30; i++){
-    trailBackground[i] = new Trail(mouseX,mouseY,10,color((random(1,255)),random(1,100)*2,255),random(0.05,1.5));
+      for (i=0; i<50; i++){
+    trailBackground[i] = new Trail(mouseX,mouseY,random(1,8),random(color),random(0.05,1.5));
   }
   
   for (i=0; i<50; i++) {
@@ -89,14 +89,14 @@ class Square {
   }
   
   body() {
-    fill(200,200,random(200,255),this.c);
+    fill(0,148,68, this.c);
     
     //Turn
-    if(this.c<100 && this.colorFull==false) {
+    if(this.c<50 && this.colorFull==false) {
       this.c+=this.cSpeed;
     }
     //Reach full
-    else if(this.c>100 && this.colorFull==false) {
+    else if(this.c>50 && this.colorFull==false) {
       this.colorFull = true;
     }
     //go back
