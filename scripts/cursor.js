@@ -1,6 +1,7 @@
 let trailBackground = [];
 var canvas
 var mouse;
+let color = ["#39B54A", "#009444", "#006838"];
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
@@ -13,11 +14,10 @@ function setup() {
   canvas.elt.style.position = "fixed"
   noCursor();
   
-      for (i=0; i<30; i++){
-    trailBackground[i] = new Trail(mouseX,mouseY,10,color((random(1,255)),random(1,100)*2,255),random(0.05,1.5));
+      for (i=0; i<50; i++){
+    trailBackground[i] = new Trail (mouseX,mouseY,random(1,8),random(color),random(0.05,1.5));
   }
 }
-
 function draw() {
   background(255);
     noCursor();
@@ -29,14 +29,9 @@ function draw() {
     trailBackground[i].trailBody();
     trailBackground[i].ease();
   }
-  
-
-  
-  //Mouse pointer
-  //fill ("white");
-  //circle(mouseX, mouseY, 20);
 }
-
+  
+  
 class Trail {
   constructor(x,y,d,c,s) {
     this.x = x;
@@ -61,16 +56,4 @@ class Trail {
   this.y += (dy * easing);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
