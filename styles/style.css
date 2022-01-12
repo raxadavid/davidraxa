@@ -1,7 +1,7 @@
-/* #39B54A */
-/* #009444 */
-/* #006838 */
-/* #58595B */
+/* #39B54A LIGHT GREEN */
+/* #009444 MEDIUM GREEN */
+/* #006838 DARKEST GREEN */ 
+/* #58595B BLACK/DARK GRAY */
 
 body {
 	color: #58595B;
@@ -32,6 +32,17 @@ h2 {
 	font-size: 48px;
 	color: #39B54A;
 	line-height: 1;
+}
+
+h3 {
+    color: #006838;
+    display: block;
+    font-size: 24px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 h4 {
@@ -121,6 +132,8 @@ p {
 
 
 /*LINE*/
+/*LINE*/
+
 hr {
     position: static;
 	border: none;
@@ -383,7 +396,6 @@ hr {
 
 .footer .footer-info h3 {
 	line-height: 0;
-    color: blue;
     font-size: 24px;
 }
 
@@ -540,8 +552,18 @@ hr {
 }
 
 .desImage {
-    max-width: 100%;
-    min-width: 100%;
+    width: 100%;
+}
+
+.desLong {
+    width: 100%;
+    padding: 30px;
+}
+
+.desImageColumn {
+    float:  left;
+    width: 50%;
+    padding-right: 30px;
 }
 
 
@@ -566,11 +588,16 @@ progress::-moz-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background: lawngreen;
+  background: #009444;
 }
 
 progress::-webkit-progress-bar {
-  background: lightblue;
+  background: #58595B;
+}
+
+/** LINK **/
+.link {
+    color: #58595B;
 }
 
 /** SCROLL TO TOP BUTTON **/
@@ -587,8 +614,8 @@ progress::-webkit-progress-bar {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: rgb(239, 239, 239);
-  color: #58595B;
+  background-color: #39B54A;
+  color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
@@ -601,8 +628,22 @@ progress::-webkit-progress-bar {
   color: white;
 }
 
+/* PROCESS NAVIGATION */
+/* PROCESS NAVIGATION */
+/* PROCESS NAVIGATION */
+/* PROCESS NAVIGATION */
 
-
+.processNav {
+    position: fixed;
+    right: 3rem;
+    bottom: 50%;
+    background-color: red;
+    list-style-type: none;
+  overflow: hidden;
+  margin:  0;
+  margin-right: 3rem;
+  padding: 0;
+}
 
 
 
