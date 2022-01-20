@@ -118,7 +118,7 @@ p {
 
 .hero-text .typed-text {
     display: none;
-
+    font-size:  16px;
 }
 
 .hero-text .typed-cursor {
