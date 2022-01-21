@@ -17,7 +17,9 @@ body {
 div {
 }
 
-
+b {
+    color: #006838;
+}
 
 a {
 	text-decoration: none;
@@ -496,6 +498,25 @@ hr {
         padding: 0 5px;
     }
 }
+
+
+/****** ABOUT PAGE ******/
+/****** ABOUT PAGE ******/
+/****** ABOUT PAGE ******/
+/****** ABOUT PAGE ******/
+/****** ABOUT PAGE ******/
+/****** ABOUT PAGE ******/
+
+.aboutImage {
+    border-radius: 15px;
+    width: 30rem;
+    display: flex;
+}
+
+
+
+
+
 
 /****** WEBSITE DESIGN METHODOLOGY PAGES ********/
 /****** WEBSITE DESIGN METHODOLOGY PAGES ********/
