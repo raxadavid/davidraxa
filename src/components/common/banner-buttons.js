@@ -5,7 +5,7 @@ import React from 'react';
 // filterSelection('misc')
 // filterSelection('inprogress')
 const BannerButtons = () => (
-  <div id="myBtnContainer" className="banner">
+  <div id="myBtnContainer" className="banner" data-testid="link-to-pages">
     <button className="btn active" onClick={() => console.log('something')}> Show all</button>
     <button className="btn" onClick={() => console.log('something')}> UX/UI Projects</button>
     <button className="btn" onClick={() => console.log('something')}> Graphic Design</button>

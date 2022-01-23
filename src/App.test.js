@@ -1,8 +1,19 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe('header area', () => {
+  beforeEach(() => {
+    render(<App />);
+  });
+  it('renders page with specific elements', () => {
+    const nameOfSiteOwner = screen.getByText(/david raxa/i);
+    const siteTitle = screen.getByText(/Design Portfolio/i);
+    expect(nameOfSiteOwner).toBeInTheDocument();
+    expect(siteTitle).toBeInTheDocument();
+  });
+
+  it('renders page links', () => {
+    expect(screen.getByTestId('link-to-pages')).toBeInTheDocument();
+    
+  });
+})

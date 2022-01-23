@@ -26,6 +26,7 @@ export const ITEMS = [
     category: 'uxui',
     alt: 'MWC App Redesign',
     image: mwcappui,
+    hasFafa: false
   },
   {
     title: 'Event Poster',
@@ -34,6 +35,7 @@ export const ITEMS = [
     category: 'graphicdesign',
     alt: 'Event Poster Design',
     image: eventPoster,
+    hasFafa: false
   },
   {
     title: 'Insomniac App Redesign',
@@ -42,6 +44,7 @@ export const ITEMS = [
     category: 'uxui',
     alt: 'Insomniac App Redesign',
     image: insomniacApp,
+    hasFafa: false
   },
   {
     title: 'Division I College Football Stat Analysis',
@@ -50,6 +53,7 @@ export const ITEMS = [
     category: 'graphicdesign',
     alt: 'College Football Sport Analysis',
     image: sportsPoster,
+    hasFafa: false
   },
   {
     title: 'TAZO Tea Redesign / Repackaging',
@@ -58,6 +62,7 @@ export const ITEMS = [
     category: 'graphicdesign',
     alt: 'TAZO Tea Redesign',
     image: tazoredesign,
+    hasFafa: false
   },
   {
     title: 'Interactive Energy Project',
@@ -66,6 +71,7 @@ export const ITEMS = [
     category: 'uxui',
     alt: 'Interactive Energy Project',
     image: energyinteractive,
+    hasFafa: false
   },
   {
     title: 'GRAND Redesign',
@@ -74,6 +80,7 @@ export const ITEMS = [
     category: 'graphicdesign',
     alt: 'Grand Redesign',
     image: grand,
+    hasFafa: true
   },
   {
     title: 'Coffee Shop Redesign',
@@ -82,6 +89,7 @@ export const ITEMS = [
     category: 'graphicdesign',
     alt: 'Coffee Shop Redesign',
     image: otcacredesign,
+    hasFafa: true
   },
   {
     title: 'p5js Javascript 2D Game',
@@ -90,6 +98,7 @@ export const ITEMS = [
     category: 'uxui',
     alt: 'Javascript Videogame',
     image: p5jsMockup,
+    hasFafa: true
   },
   {
     title: 'Crystal Goblet Book Design',
@@ -98,6 +107,7 @@ export const ITEMS = [
     category: 'graphicdesign',
     alt: 'Crystal Goblet Book Design',
     image: crystalgoblet,
+    hasFafa: true
   },
   {
     title: 'Nacho Libre Video Production',
@@ -106,5 +116,6 @@ export const ITEMS = [
     category: 'misc',
     alt: 'Nacho Libre Student Video Production',
     image: nacholibre,
+    hasFafa: true
   }
 ];
