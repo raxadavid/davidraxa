@@ -647,6 +647,7 @@ progress::-webkit-progress-bar {
   background-color: #009444;
   transition: .3s;
   color: white;
+    border-radius: 4px;
 }
 
 /* PROCESS NAVIGATION */
@@ -655,17 +656,63 @@ progress::-webkit-progress-bar {
 /* PROCESS NAVIGATION */
 
 .processNav {
-    position: fixed;
-    right: 3rem;
-    bottom: 50%;
-    background-color: red;
-    list-style-type: none;
+  position: fixed;
+  list-style-type: none;
+  right: 3rem;
+  top:  10rem;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: .3s;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+.processNav li {
+    color: #39B54A;
+    text-decoration: none;
+}
+
+.processNav a:hover {
+    transition:  .3s;
+    color: #006838;
+}
+
+.processNav a {
+    text-decoration:  none;
+    outline: none;
+    border: none;
+    color: #39B54A;
+
+}
+
+
+.navBar {
+  list-style-type: none;
   overflow: hidden;
   margin:  0;
   margin-right: 3rem;
   padding: 0;
 }
 
+
+.listItem a {
+    display: block;
+    color: #58595B;
+    text-align:  center;
+    padding: 14px 16px;
+    text-decoration:  none;
+}
+
+.listItem a:hover {
+    color: #009444;
+    transition:  .3s;
+}
 
 
 
