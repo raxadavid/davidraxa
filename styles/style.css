@@ -666,11 +666,11 @@ progress::-webkit-progress-bar {
   outline: none;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
+  border-radius: 5px;
   transition: .3s;
   font-size: 16px;
-  font-weight: bold;
-
+  /** font-weight: bold; **/
+    background-color: #39B54A;
 }
 
 .processNav li {
@@ -687,33 +687,8 @@ progress::-webkit-progress-bar {
     text-decoration:  none;
     outline: none;
     border: none;
-    color: #39B54A;
-
+    color: white;
 }
-
-
-.navBar {
-  list-style-type: none;
-  overflow: hidden;
-  margin:  0;
-  margin-right: 3rem;
-  padding: 0;
-}
-
-
-.listItem a {
-    display: block;
-    color: #58595B;
-    text-align:  center;
-    padding: 14px 16px;
-    text-decoration:  none;
-}
-
-.listItem a:hover {
-    color: #009444;
-    transition:  .3s;
-}
-
 
 
 
